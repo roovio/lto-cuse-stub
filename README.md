@@ -1,6 +1,6 @@
 # lto-cuse-stub
 
-## Description 
+## Description
 implements a [cuse](https://github.com/libfuse/libfuse/blob/master/example/cuse.c) chardev /dev/nst0stub that handles most I/O as real /dev/nst0 would. Can be utilized for testing tape backup software.
 
 ## Dependencies
@@ -10,8 +10,8 @@ implements a [cuse](https://github.com/libfuse/libfuse/blob/master/example/cuse.
 ## Building
 
 ```
-meson setup build
-cd build
+meson setup builddir
+cd builddir
 meson build
 ```
 ## Running
@@ -20,6 +20,6 @@ meson build
  ```
  ./lto-cuse-stub
  ```
- 
+
  You should now have a new /dev/nst0stub character device. To "unmount" it,
  kill the "lto-cuse-stub" process.
